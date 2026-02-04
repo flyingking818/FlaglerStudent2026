@@ -11,8 +11,7 @@
         <!--Home-->
         <scene sceneID="lC2-wZ-UJo">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="omG-3o-EFI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <viewController id="1YS-0M-DUQ" sceneMemberID="viewController">
+                <viewController id="1YS-0M-DUQ" customClass="HomeViewController" customModule="Flagler_Student" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6gd-tE-loS">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -60,20 +59,27 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Hello World!"/>
+                                <connections>
+                                    <action selector="submitButton:" destination="1YS-0M-DUQ" eventType="touchUpInside" id="ugq-M8-Bp3"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ctv-0N-kPW"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" landscapeImage="house.circle" catalog="system" selectedImage="house.circle.fill" id="JWT-uj-ru9"/>
+                    <connections>
+                        <outlet property="majorTextField" destination="gBm-i3-wIf" id="QDi-bu-8RG"/>
+                        <outlet property="nameTextField" destination="ZKR-oL-ptD" id="0lN-Lr-2Xx"/>
+                    </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="omG-3o-EFI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="177.86259541984731" y="525.35211267605632"/>
         </scene>
         <!--Calculator-->
         <scene sceneID="VJO-h2-dSF">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="WEK-je-hk9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="se3-RU-8ZI" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vMU-CE-5Hz">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
@@ -83,13 +89,13 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Calculator" image="dollarsign.circle" catalog="system" selectedImage="dollarsign.circle.fill" id="NRJ-nl-o8o"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WEK-je-hk9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1065" y="525"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="pV1-cV-xGV">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1bH-mz-DYg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tabBarController id="AOO-Kc-kWI" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bsa-0G-nud">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
@@ -101,6 +107,7 @@
                         <segue destination="1YS-0M-DUQ" kind="relationship" relationship="viewControllers" id="A3d-gj-8TH"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1bH-mz-DYg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1431" y="-244"/>
         </scene>
