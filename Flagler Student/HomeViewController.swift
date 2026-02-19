@@ -14,9 +14,12 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var majorTextField: UITextField!
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+
     }
 
     @IBAction func submitButton(_ sender: UIButton) {
@@ -47,6 +50,7 @@ class HomeViewController: UIViewController {
     
         
     }
+    
     
 }
 
